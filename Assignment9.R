@@ -45,7 +45,7 @@ xyplot(Survival ~ Organ, data = survival_data,
        grid = TRUE,                 
        col = rainbow(length(unique(survival_data$Organ))), 
        main = "Survival Time by Organ",
-       xlab = "Index",
+       xlab = "Organ",
        ylab = "Survival Time",
        scales = list(x = list(rot = 45)),
        auto.key = list(columns = 3, title = "Organ")) 

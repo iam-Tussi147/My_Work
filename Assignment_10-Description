@@ -1,0 +1,10 @@
+Package: VDJ_Analysis/tushar
+Title: Pairwise Sequence Alignment and Junction Analysis for Immune Receptor Sequences
+Version: 0.0.0.9000
+Authors@R: c(
+    person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+)
+Description: This package provides tools for aligning and analyzing immune receptor sequences such as T-cell receptors and immunoglobulins. It allows users to perform pairwise alignments of test sequences against reference V and J regions, assess match scores, and evaluate junction productivity to determine if a sequence is in-frame and functional. Designed to support research and analysis in immunogenetics, the package enables the exploration of immune repertoire diversity and function.
+Depends: R (>= 3.1.2)
+License: CC0
+LazyData: true

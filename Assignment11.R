@@ -28,7 +28,7 @@ outliers[, j] <- outliers[, j] && tukey.outlier(x[, j])
 
 outliers[, j] <- tukey_outlier(x[, j])
 
-# updated code
+
 
 tukey_outlier <- function(column) {
   Q1 <- quantile(column, 0.25, na.rm = TRUE)

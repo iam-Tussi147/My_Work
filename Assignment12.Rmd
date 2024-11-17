@@ -1,0 +1,40 @@
+---
+title: "Alignment Score Visualization"
+author: "Tushar"
+date: "2024-11-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+## Alignment Scores Analysis 
+
+
+```{r pressure, echo=FALSE}
+# Example alignment scores
+alignment_scores <- data.frame(
+  Region = c("V1", "V2", "V3", "J1", "J2"),
+  Score = c(85, 90, 78, 88, 92)
+)
+print(alignment_scores)
+# Load ggplot2 library
+library(ggplot2)
+
+# Create a bar chart
+ggplot(alignment_scores, aes(x = Region, y = Score, fill = Region)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(
+    title = "Alignment Scores for V and J Regions",
+    x = "Regions",
+    y = "Scores"
+  )
+```
+
+
